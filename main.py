@@ -324,6 +324,7 @@ def buscar_com_retry(url: str) -> dict | list | None:
             return None
 
 
-url = "https://jsonplaceholder.typicode.com//posts/999999"
-resposta = buscar_com_retry(url)
-print(resposta)
+if __name__ == "__main__":
+    url = "https://jsonplaceholder.typicode.com/posts/1"
+    resposta = buscar_com_retry(url)
+    print(resposta)
